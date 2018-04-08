@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CSharpHosts {
-    class HostsReader {
+    public class HostsReader {
         // The default windows location for the hosts file.
         private const string sysHosts =
             @"C:\windows\system32\drivers\etc\Hosts";
