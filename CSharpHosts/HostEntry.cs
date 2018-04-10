@@ -17,7 +17,7 @@ namespace CSharpHosts
             // Basic string concatenation, in host file entry form.
             return
                 (!Enabled ? "#DISABLED " : "")
-                + IpAddress + " " + WebAddress + " " +
+                + IpAddress + " " + WebAddress.Trim() + " " +
                 (Comment == "" ? "" : ("#" + Comment));
         }
         public HostEntry() { }
